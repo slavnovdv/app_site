@@ -12,6 +12,29 @@ li{
     list-style: none;
 }
 
+/*------------------- Новые настройки-------------------*/
+
+/* Вертикальное меню*/
+.menu_vert
+{
+    /*padding: 0 0;*/
+    border: 2px solid #020000;
+    background: #fff;    
+    font-family: 'Times New Roman', sans-serif;
+    min-width: 80px;    
+}
+
+.menu_vert ul
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+
+
+/*------------------- Старые настройки------------------*/
 .menu_left
 {
     text-align: center;
@@ -73,6 +96,5 @@ li{
     font-size: 13px;
     line-height: 13px;
     margin-top: 2px;
-    color: #999;
-    -webkit-transition: color 0.1s ease-out;
+    color: #999;   
 }
