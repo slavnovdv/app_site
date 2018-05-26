@@ -1,113 +1,93 @@
 ﻿*{
     margin: 0;
     padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a{
     text-decoration: none;
 }
 
-li{
+li
+{
     text-decoration: none;
     list-style: none;
 }
+.no-indent
+ {
+     margin: 0 !important;
+     padding: 0 !important;
+ }
 
 /*------------------- Новые настройки-------------------*/
 
 /* Вертикальное меню*/
 .menu_vert
 {
-    /*padding: 0 0;*/
     border: 2px solid #020000;
     background: #fff;    
-    font-family: 'Times New Roman', sans-serif;
+    font-size: 14px;    
     min-width: 80px;    
+    -webkit-font-smoothing: antialiased;
 }
-
-.menu_vert ul
-{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style: none;
-}
-
+/* ------- LI--------*/
 .menu_vert li
 {
-    padding: 9px 0;
+    padding: 9px 0 0 0;    
+    text-align: center;     
 }
 
-.menu_vert a:active
+.menu_vert li:hover .icon_report .icon_settings
 {
- color: black;
+    top: 10px;
+    color: black;
+    opacity: 0.9;
 }
+
+.menu_vert li:hover a
+{    
+    color: black;
+}
+
+/*--------A---------*/
 .menu_vert a
 {
-    color: dimgray;
-    position: relative
+    color: #999;       
 }
 
-/*------------------- Старые настройки------------------*/
-.menu_left
+.menu_vert a .icon_active
 {
-    text-align: center;
-    min-width: 80px;
-    margin-top: 20px;
-    padding: 0 0;    
+    color: black;      
 }
 
-.menu_left_item {
-    padding: 9px 0;
+.menu_vert a:hover
+{    
+    text-decoration: none;
 }
-.menu_left_item_a
+
+/*----Кнопки-----*/
+.menu_vert a .icon_report .icon_settings
+{     
+    position: relative;
+    opacity: 0.3;    
+}
+
+
+
+/* ------------ Нужный пример---------------------*/
+/*.menu_vert a .icon_report::before
 {
-    text-align: center;
-    font-size: 15px;
-    line-height: 9px;
-    margin-top: 2px;
-    color: #999;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    font-size: 33px;
+    content: "\f080";      
 }
 
-.menu_left_icon
+.menu_vert a .icon_settings::before
 {
-    display: block;    
-    width: auto;
-    margin: 0 auto;
-    cursor: inherit;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 33px;    
+    content: "\f080";      
 }
-
-
-.menuvert {
-    text-align: center;
-    float: left;
-    /*margin-top: 20px;
-    width: 8%;*/
-    min-width: 80px;
-    max-width: 120px;
-}
-
-.list-unstyled {
-    padding-left: 0;
-    list-style: none;
-}
-
-.b-vert {
-    text-align: center;
-    float: left;
-    margin-top: 20px;
-    width: 8%;
-    min-width: 80px;
-    max-width: 138px;
-}
-
-.b-vert__item {
-    padding: 9px 0;
-}
-
-.b-vert__title {
-    text-align: center;
-    font-size: 13px;
-    line-height: 13px;
-    margin-top: 2px;
-    color: #999;   
-}
+*/
