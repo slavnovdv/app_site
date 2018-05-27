@@ -1,78 +1,64 @@
-﻿*{
-    margin: 0;
-    padding: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+﻿* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-li
-{
-    text-decoration: none;
-    list-style: none;
+li {
+  text-decoration: none;
+  list-style: none;
 }
-.no-indent
- {
-     margin: 0 !important;
-     padding: 0 !important;
- }
+.no-indent {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
 /*------------------- Новые настройки-------------------*/
 
 /* Вертикальное меню*/
-.menu_vert
-{
-    border: 2px solid #020000;
-    background: #fff;    
-    font-size: 14px;    
-    min-width: 80px;    
-    -webkit-font-smoothing: antialiased;
-}
-/* ------- LI--------*/
-.menu_vert li
-{
-    padding: 9px 0 0 0;    
-    text-align: center;     
+.menu_vert {
+  border: 2px solid #020000;
+  background: #fff;
+  font-size: 14px;
+  min-width: 80px;
+  -webkit-font-smoothing: antialiased;
 }
 
-.menu_vert li:hover .icon_report .icon_settings
-{
-    top: 10px;
-    color: black;
-    opacity: 0.9;
+.menu_vert li {
+  padding: 12px 0 0 0;
+  text-align: center;
 }
 
-.menu_vert li:hover a
-{    
-    color: black;
+.menu_vert li:hover .icon_settings {
+  bottom: 4px;
+  color: #343a40;
+  opacity: 1;
 }
 
-/*--------A---------*/
-.menu_vert a
-{
-    color: #999;       
+.menu_vert li:hover a {
+  color: #343a40;
+  opacity: 1;
+  text-decoration: none;
 }
 
-.menu_vert a .icon_active
-{
-    color: black;      
+.menu_vert a {
+  color: #343a40;
+  -webkit-font-smoothing: antialiased;
+  opacity: 0.5;
 }
 
-.menu_vert a:hover
-{    
-    text-decoration: none;
+.menu_vert .icon_settings {
+  position: relative;
+  opacity: 0.5;
 }
 
-/*----Кнопки-----*/
-.menu_vert a .icon_report .icon_settings
-{     
-    position: relative;
-    opacity: 0.3;    
+.menu_vert .icon_active {
+  opacity: 1;
 }
-
-
 
 /* ------------ Нужный пример---------------------*/
 /*.menu_vert a .icon_report::before
