@@ -63,7 +63,10 @@ li {
 /*--------Панель поиска запуска тестов*/
 .panel_search
 {
-    border: 2px solid #020000;    
+    border: 2px solid #020000; 
+    font-size: 16px;   
+    text-align: center;
+    padding: 5px 0 0 0;
 }
 
 /* ------------ Нужный пример---------------------*/
