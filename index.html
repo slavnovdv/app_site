@@ -1,102 +1,111 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Система мониторинга процесса тестирования</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="libs/font_answer/css/fontawesome-all.min.css" />
-    <link rel="stylesheet" href="libs/bootstrap411/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <title>Система мониторинга процесса тестирования</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="libs/font_answer/css/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="libs/bootstrap411/css/bootstrap.min.css">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">
             <img src="img/logo.svg" width="40" height="40" alt="logo" />
         </a>
-    </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="menu_vert col-sm-1 no-indent">
-                <ul>
-                    <li>
-                        <a href="#" class="icon_active">
-                            <div class="icon_settings icon_active">
-                                <i class="fas fa-chart-pie fa-3x"></i>
-                            </div>
-                            Report
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="icon_settings">
-                                <i class="fas fa-chart-line fa-3x"></i>
-                            </div>
-                            Settings
-                        </a>
-                    </li>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="icon_settings">
-                                <i class="fas fa-chart-bar fa-3x"></i>
-                            </div>
-                            Settings
-                        </a>
-                    </li>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="icon_settings">
-                                <i class="fas fa-cogs fa-3x"></i>
-                            </div>
-                            Settings
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col">
-                <div class="panel_search row">
-                    <div class="col"></div>
-                    <div class="col-8">
-                        <form role="form" class="form-inline">
-                            <div class="form-group mr-2">
-                                <label for="labelDate">Дата прогона:</label>
-                                <select class="form-control-sm" id="selectDate">
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="menu_vert col-sm-1 no-indent">
+        <ul>
+          <li>
+            <a href="#" class="icon_active">
+              <div class="icon_settings icon_active">
+                <i class="fas fa-chart-pie fa-3x"></i>
+              </div>
+              Report
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon_settings">
+                <i class="fas fa-chart-line fa-3x"></i>
+              </div>
+              Settings
+            </a>
+          </li>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon_settings">
+                <i class="fas fa-chart-bar fa-3x"></i>
+              </div>
+              Settings
+            </a>
+          </li>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon_settings">
+                <i class="fas fa-cogs fa-3x"></i>
+              </div>
+              Settings
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="panel_search row">
+          <div class="col"></div>
+          <div class="col-10">
+            <form role="form" class="form-inline">
+              <div class="form-group mr-3">
+                <label for="labelDate">Дата прогона:</label>
+                <select class="form-control-sm" id="selectDate">
                                     <option>04-06-2018</option>
                                     <option>05-06-2018</option>
                                     <option>06-06-2018</option>
                                     <option>07-06-2018</option>
                                     <option>08-06-2018</option>
                                 </select>
-                            </div>
-                            <div class="form-group mr-2">
-                                <label for="labelDate">Вид тестирования:</label>
-                                <select class="form-control-sm" id="selectDate">
+              </div>
+              <div class="form-group mr-3">
+                <label for="labelDate">Вид тестирования:</label>
+                <select class="form-control-sm" id="selectDate">
                                     <option>SMOKE</option>
                                     <option>SmartRegress</option>
                                 </select>
-                            </div>
-                            <div class="form-group mr-2">
-                                <label for="labelDate">Номер запуска:</label>
-                                <select class="form-control-sm" id="selectDate">
+              </div>
+              <div class="form-group mr-3">
+                <label for="labelDate">Номер запуска:</label>
+                <select class="form-control-sm" id="selectDate">
                                     <option>303</option>
                                     <option>304</option>
                                     <option>305</option>
                                     <option>306</option>
                                     <option>307</option>
                                 </select>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col"></div>
-                </div>
-            </div>
+              </div>
+              <div class="form-group mr-3">
+                <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value=""> Сформировать графики
+                </label>
+              </div>
+              <div class="form-group mr-3">
+                <button type="button" class="btn btn-success btn-sm">Поиск</button>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="col"></div>
         </div>
+      </div>
     </div>
-    <script src="js/script.js"></script>
-    <script src="libs/bootstrap411/js/bootstrap.min.js"></script>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="libs/bootstrap411/js/bootstrap.min.js"></script>
 </body>
 
 </html>
