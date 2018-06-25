@@ -63,26 +63,45 @@ li {
 /*--------Панель поиска запуска тестов*/
 .panel_search
 {
-    border: 2px solid #020000; 
-    font-size: 16px;   
+    border: 2px solid #020000;
+    font-size: 16px;
     text-align: center;
     padding: 5px 0 0 0;
 }
 
+.panel_search select:focus
+{
+   outline: 2px solid #343a40;
+}
+
+.panel_search select option {
+    background: #ededed;
+    color: #343a40;
+    text-shadow: none;
+}
+
+/* -----------------Зона постороения графиков --------*/
+.graph_zone
+{
+  border: 2px solid #020000;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 0 0 0;
+}
 /* ------------ Нужный пример---------------------*/
 /*.menu_vert a .icon_report::before
 {
     font-family: "Font Awesome 5 Free";
-    font-weight: 900; 
+    font-weight: 900;
     font-size: 33px;
-    content: "\f080";      
+    content: "\f080";
 }
 
 .menu_vert a .icon_settings::before
 {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    font-size: 33px;    
-    content: "\f080";      
+    font-size: 33px;
+    content: "\f080";
 }
 */
